@@ -9,3 +9,7 @@ get '/play/:hand1/:hand2' do
   @outcome = RockPaperScissors.play( params[:hand1], params[:hand2] )
   erb (:result)
 end
+
+get '/' do
+  erb (:welcome)
+end
