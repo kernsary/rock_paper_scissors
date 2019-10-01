@@ -15,7 +15,7 @@ class RockPaperScissors
   #   end
   # end
 
-  # @@hand1 = nil
+  @@hand1 = nil
 
   def self.check_input(input)
     valid_options = ["rock", "paper", "scissors"]
@@ -36,7 +36,7 @@ class RockPaperScissors
     # if !valid_options.include?(hand2)
     #   return "Sorry, the valid options are 'rock', 'paper' and 'scissors'. Enter another choice."
     # end
-    if @@hand1 == ""
+    if @@hand1 == "" || @@hand1 == nil
       return "Oops! Player 1 didn't enter anything."
     end
     if @@hand1 == hand2
