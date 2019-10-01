@@ -19,8 +19,10 @@ also_reload('./models/*')
 # end
 
 get '/player1/:hand1' do
-  RockPaperScissors.player1(params[:hand1])
-  return nil
+  response = RockPaperScissors.player1(params[:hand1])
+  # # if response = "OK"
+    erb(:player1)
+  # end
 end
 
 get '/player2/:hand2' do
@@ -30,4 +32,12 @@ end
 
 get '/' do
   erb (:welcome)
+end
+
+get '/player1' do
+  erb(:player1)
+end
+
+get '/player2' do
+  erb(:player2)
 end

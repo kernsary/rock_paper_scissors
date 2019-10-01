@@ -20,15 +20,16 @@ class RockPaperScissors
   def self.player1(hand1)
     valid_options = ["rock", "paper", "scissors"]
     if !valid_options.include?(hand1)
-      return "Sorry, the valid options are 'rock', 'paper' and 'scissors'."
+      return "Sorry, the valid options are 'rock', 'paper' and 'scissors'. Enter another choice."
     end
     @@hand1 = hand1
+    # return "OK"
   end
 
   def self.player2(hand2)
     valid_options = ["rock", "paper", "scissors"]
     if !valid_options.include?(hand2)
-      return "Sorry, the valid options are 'rock', 'paper' and 'scissors'."
+      return "Sorry, the valid options are 'rock', 'paper' and 'scissors'. Enter another choice."
     end
     if @@hand1 == hand2
       return "Draw!"
