@@ -34,9 +34,9 @@ class RockPaperScissors
       return "Draw!"
     end
     if (@@hand1 == 'rock' && hand2 == 'scissors') || (@@hand1 == 'scissors' && hand2 == 'paper') || (@@hand1 == 'paper' && hand2 == 'rock')
-      return "Player 1 wins!"
+      return "Player 1 wins - #{@@hand1} beats #{hand2}!"
     else
-      return "Player 2 wins!"
+      return "Player 2 wins - #{hand2} beats #{@@hand1}!"
     end
   end
 
