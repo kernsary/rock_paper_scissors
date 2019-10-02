@@ -15,7 +15,9 @@ class RockPaperScissors
   #   end
   # end
 
-  @@hand1 = nil
+  def self.reset()
+    @@hand1 = nil
+  end
 
   def self.check_input(input)
     valid_options = ["rock", "paper", "scissors"]

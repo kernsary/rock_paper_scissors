@@ -45,6 +45,7 @@ end
   end
 
   get '/player1' do
+    RockPaperScissors.reset()
     erb(:player1)
   end
 
